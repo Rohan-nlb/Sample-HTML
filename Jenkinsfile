@@ -12,7 +12,7 @@ pipeline {
                         branches: [[name: '*/main']],
                         userRemoteConfigs: [[
                             url: 'https://github.com/Rohan-nlb/Sample-HTML.git',
-                            credentialsId: 'github_token' // Use the credential ID stored in Jenkins
+                            credentialsId: 'af20773d-a504-4289-849f-d4ee014836c4' // Use the credential ID stored in Jenkins
                         ]]
                     ])
                 }
