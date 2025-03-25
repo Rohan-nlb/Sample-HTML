@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        GITHUB_CREDENTIALS = credentials('github_token') // Ensure 'github_token' matches the ID from Jenkins credentials
+        GITHUB_CREDENTIALS = credentials('gaf20773d-a504-4289-849f-d4ee014836c4') // Ensure 'github_token' matches the ID from Jenkins credentials
     }
     stages {
         stage('Clone Repository') {
