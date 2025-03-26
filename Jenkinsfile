@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        GITHUB_REPO = 'https://github.com/Rohan-nlb/Sample-HTML.git'
+        GITHUB_REPO = 'git@github.com:Rohan-nlb/Sample-HTML.git'
     }
     stages {
         stage('Clone Repository') {
@@ -32,8 +32,7 @@ pipeline {
                             git pull origin main
 
                             REM Create gh-pages branch if it doesn’t exist
-                           git checkout gh-pages 2>/dev/null || git checkout -b gh-pages
-                            git checkout gh-pages
+                            git checkout gh-pages 2>nul || git checkout -b gh-pages
                             git pull origin gh-pages || echo "No remote gh-pages branch yet"
 
                             REM Deploy the new changes
