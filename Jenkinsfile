@@ -32,7 +32,7 @@ pipeline {
                             git pull origin main
 
                             REM Create gh-pages branch if it doesn’t exist
-                            git branch -r | findstr /C:"origin/gh-pages" >nul || git checkout -b gh-pages
+                           git checkout gh-pages 2>/dev/null || git checkout -b gh-pages
                             git checkout gh-pages
                             git pull origin gh-pages || echo "No remote gh-pages branch yet"
 
