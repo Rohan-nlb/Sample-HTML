@@ -10,3 +10,34 @@
    align-items:center;
    justify-content: center;
 }
+@keyframes stretch {
+    /* declare animation actions here */
+  }
+  
+  .element {
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-composition: add;
+  }
+  
+  /*
+    is the same as:
+  */
+  
+  .element {
+    animation: 
+      stretch
+      1.5s
+      ease-out
+      0s
+      alternate
+      infinite
+      none
+      running;
+  }
